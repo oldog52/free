@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "144.31.7.182",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "162.159.91.222",
       "server_port": 443,
-      "uuid": "becd3b04-62a8-4b74-be67-be746008b4c2",
+      "uuid": "50414e45-4c5f-5a45-5553-723a643df685",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-582.spliceflowtech.com",
+        "server_name": "n3zaxce7u0es.crzl48eiuses.workers.dev",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/723a643df685/loc-0",
+        "headers": {
+          "Host": "n3zaxce7u0es.crzl48eiuses.workers.dev"
+        }
       }
     },
     {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

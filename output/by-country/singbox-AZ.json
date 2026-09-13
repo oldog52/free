@@ -5,30 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "ir-new1.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ir-new1.failspace.top",
-        "insecure": false
-      }
+      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe",
+      "server": "basalam.horqen.ir",
+      "server_port": 21289,
+      "uuid": "c12db015-a63c-43e5-a744-6398a90373b5"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

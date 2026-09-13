@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 2.26.0.201
+  server: 144.31.7.182
   port: 443
   udp: true
   type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
+  uuid: becd3b04-62a8-4b74-be67-be746008b4c2
   tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
+  servername: cdn-582.spliceflowtech.com
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
