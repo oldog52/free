@@ -5,27 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 94.183.209.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 94.183.209.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 185.223.57.16
+  server: 185.223.57.10
   port: 33743
   udp: true
   type: vless
@@ -38,32 +18,35 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: streambox.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 194.61.121.93
-  port: 7538
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: poland-viper.moritech.net
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 94.183.209.58
   port: 443
   udp: true
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-viper.moritech.net
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 94.183.209.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: poland-ded.moritech.net
   port: 443
   udp: true
@@ -73,15 +56,22 @@ proxies:
   tls: true
   servername: poland-ded.moritech.net
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 45.192.12.93
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: streambox.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: 194.61.121.93
+  port: 7538
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 144.31.5.64
   port: 443
   udp: true
@@ -92,17 +82,27 @@ proxies:
   servername: pl6.moritech.net
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  server: 144.31.5.3
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: poland-new-ded.failspace.top
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl4.moritech.net
+  servername: poland-new-ded.failspace.top
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: poland-viper.moritech.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-viper.moritech.net
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 11 - xiaohe
   server: datpol.2clash.ru
   port: 443
@@ -116,6 +116,16 @@ proxies:
     short-id: '32445654'
   servername: datpol.2clash.ru
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 12 - xiaohe
+  server: 144.31.5.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl4.moritech.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,6 +142,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
   - 🇵🇱 波兰 (Poland) 11 - xiaohe
+  - 🇵🇱 波兰 (Poland) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,5 +159,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
   - 🇵🇱 波兰 (Poland) 10 - xiaohe
   - 🇵🇱 波兰 (Poland) 11 - xiaohe
+  - 🇵🇱 波兰 (Poland) 12 - xiaohe
 rules:
 - MATCH,PROXIES
