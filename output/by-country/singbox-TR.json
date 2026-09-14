@@ -5,13 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe",
-      "server": "189.74.97.47",
-      "server_port": 2087,
-      "uuid": "894fe9f0-b998-49c0-8003-a5007de921e1",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "shop.neexbyte.ir",
+      "server_port": 8443,
+      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.neexbyte.ir",
+        "insecure": false
+      },
       "transport": {
-        "type": "ws",
-        "path": "/755276b33b6f"
+        "type": "ws"
       }
     },
     {
@@ -19,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
