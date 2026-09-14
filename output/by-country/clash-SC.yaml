@@ -19,13 +19,20 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 138.124.0.168
-  port: 8080
+  server: 172.67.148.26
+  port: 443
   udp: true
-  type: hysteria2
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  tls: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   server: 156.226.168.221
   port: 35193
