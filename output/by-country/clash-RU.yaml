@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 91.196.32.163
+  server: 104.17.147.22
   port: 443
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/mPZ7O1CUbIBPGNPZQ2HeV?ed=2560
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 91.240.86.70
   port: 22443
@@ -19,7 +22,7 @@ proxies:
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: msk.frkn.org
   port: 443
@@ -27,7 +30,7 @@ proxies:
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 46.8.200.91
   port: 443
