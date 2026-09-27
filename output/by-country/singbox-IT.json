@@ -58,7 +58,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -66,6 +66,14 @@
           "short_id": "cd6065902eea7a02"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
+      "server": "91.201.65.122",
+      "server_port": 9092,
+      "method": "aes-256-cfb",
+      "password": "TyNkGmp9hs6eGpDK"
     },
     {
       "type": "selector",
@@ -76,7 +84,8 @@
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
-        "🇮🇹 意大利 (Italy) 05 - xiaohe"
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ]
     },
     {
@@ -87,7 +96,8 @@
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
-        "🇮🇹 意大利 (Italy) 05 - xiaohe"
+        "🇮🇹 意大利 (Italy) 05 - xiaohe",
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
