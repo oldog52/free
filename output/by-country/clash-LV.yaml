@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 31.57.28.147
   port: 443
   udp: true
@@ -17,14 +38,6 @@ proxies:
     short-id: 7a18a196e730e1d5
   servername: download-cdn.jetbrains.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 212.192.14.212
-  port: 8113
-  udp: true
-  type: hysteria2
-  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
-  sni: lat1.lumenvpn.tech
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,8 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +54,7 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
