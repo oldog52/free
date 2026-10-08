@@ -36,12 +36,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  server: 57.131.48.45
-  port: 8388
+  server: 91.201.65.122
+  port: 9074
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  cipher: aes-256-cfb
+  password: p5wSkb2uM3pKSS3j
 proxy-groups:
 - name: PROXIES
   type: select
