@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 128.241.25.72
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi+
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 157.228.155.184
   port: 443
   udp: true
@@ -32,7 +17,7 @@ proxies:
     short-id: e022bfea
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
@@ -42,38 +27,36 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 129.151.64.169
-  port: 31867
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 157.228.128.59
+  port: 443
   udp: true
   type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
   tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 31.59.210.26
-  port: 2088
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 31.59.210.37
+  port: 443
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -83,7 +66,25 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  server: 200.181.82.91
+  port: 21737
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   server: 45.59.120.217
   port: 443
   udp: true
@@ -95,36 +96,14 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 208250f3-2dd1-4421-87d4-5e8691fd7b15
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  server: 31.59.210.37
-  port: 443
+  server: 200.181.82.91
+  port: 28740
   udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
+  type: trojan
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  sni: www.baidu.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
