@@ -38,6 +38,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: in-152.67.8.205-0250
 proxy-groups:
 - name: PROXIES
   type: select
