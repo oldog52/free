@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "45.198.54.249",
+      "type": "trojan",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "131.196.254.151",
       "server_port": 443,
-      "uuid": "8d4c35bd-d04a-43fe-8390-47133ab90dbf",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "6a4a06t.es3.h1clayd.click",
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rHCPMrwRVCwxdwv4YOCso7zlYTPoX8w7x1f5Yqv2bGM",
-          "short_id": "b73ab21227d33c1e"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
