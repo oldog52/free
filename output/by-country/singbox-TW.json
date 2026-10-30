@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "t.me",
         "insecure": true
       }
     },
@@ -40,10 +40,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
-        "headers": {
-          "Host": "n04.jinggai.online"
-        }
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
       }
     },
     {
