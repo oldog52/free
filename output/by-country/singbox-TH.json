@@ -6,34 +6,24 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "45.154.26.63",
+      "server": "104.21.5.103",
       "server_port": 443,
-      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
-      "flow": "xtls-rprx-vision",
+      "uuid": "a90c264d-3853-4eef-9a3d-628b2d02d15e",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "3-M19.Lop.CCwU.Cc",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
-          "short_id": "3c032a7e"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "th001.zestapp778.com",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/CjBjB9sn5pCvaSwScc",
+        "headers": {
+          "Host": "3-M19.loP.ccWU.cC"
+        }
       }
     },
     {
@@ -41,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
