@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.23.29
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 104.18.42.54
+  port: 2083
   udp: true
   type: vless
-  uuid: 7e0e7ca3-7aab-420e-9b40-c15a228ef33a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: ws137.mydosss.ccwu.cc
+  servername: newwk1.f1w.de5.net
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /3b575ddc8596
+    path: /
     headers:
-      Host: ws137.mydosss.ccwu.cc
+      Host: newwk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
