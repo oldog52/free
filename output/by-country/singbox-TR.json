@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "tr2.vpnjantit.com",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
