@@ -5,24 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "150.95.109.109",
-      "server_port": 2086,
-      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-      "server": "43.255.157.222",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
+      "server": "185.247.224.206",
       "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
       "tls": {
         "enabled": true,
-        "server_name": "xvxn1hkzf.mateflora.com",
+        "server_name": "inlay.merlano.monster",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de3/stream",
+        "headers": {
+          "Host": "inlay.merlano.monster"
         }
       }
     },
@@ -31,16 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
